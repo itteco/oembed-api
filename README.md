@@ -4,11 +4,11 @@
 
 ## For your open-source project
 
-So you need embeds for your open-source project. [oEmbed](http://oembed.com) is great fit. There are many solutions available, including open-source solutions or commercial APIs. Say, [Iframely parsers](https://github.com/itteco/iframely) and [Iframely cloud](https://iframely.com) to mention a few. 
+So you need embeds for your open-source project. [oEmbed](http://oembed.com) is a great fit. There are many solutions available, including open-source solutions or commercial APIs. Say, [Iframely parsers](https://github.com/itteco/iframely) and [Iframely cloud](https://iframely.com) to mention a few. 
 
-oEmbed protocols make it possible for users of your open-source package to switch between implementations with ease, just by changing API endpoint address. So you don’t lock them down if you go with oEmbed. However, you do need a default endpoint to put it in your box. 
+oEmbed protocol makes it possible for users of your open-source package to switch between implementations with ease, just by changing API endpoint address. So you don’t lock them down if you go with oEmbed. However, you do need a default proxy endpoint to put it in your box. 
 
-To help you out, we make the two endpoints open, free and public (no API keys):
+To help you out, we make these two endpoints open, free and public (no API keys):
 
 * oEmbed API: 
 [>> http://open.iframe.ly/oembed?url=…. & origin=…](http://open.iframe.ly/api/oembed?url=http://vimeo.com/62092214&origin=)
@@ -24,7 +24,7 @@ The embed codes will be responsive whenever possible, will cover all our 1600+ d
 
 ## For your site
 
-If you publish Twitter Cards or Open Graph, Iframely can also convert those into [oEmbed](http://oembed.com) so that you publish to developers who auto-discover  oEmbed.
+If you publish Twitter Cards or Open Graph, Iframely can also convert those into [oEmbed](http://oembed.com) so that you also publish your embeds to developers who auto-discover  oEmbed.
 
 For it, you just add the following markup into `<head>` section of your page:
 
@@ -35,7 +35,9 @@ For it, you just add the following markup into `<head>` section of your page:
 
 Where `url` is URL-encoded and `origin` should contain a string with either your GitHub username or your Twitter @handle (which is perhaps the same for most of you).
 
-Twitter players, photos and Open Graph videos work best. [Debug your URLs](http://iframely.com/domain) and [whitelist your domain](https://iframely.com/qa/request) for proper coverage. Otherwise, Iframely will generate a [summary card](https://iframely.com/docs/widgets). Contact us if you need a custom parser for your embeds.
+Twitter players, photos and Open Graph videos work best. [Debug your URLs](http://iframely.com/domain) and [whitelist your domain](https://iframely.com/qa/request) for proper coverage. Otherwise, Iframely will generate a [summary card](https://iframely.com/docs/widgets). 
+
+Contact us if you need a custom parser for your embeds.
 
 
 ## Terms
