@@ -1,6 +1,6 @@
 # oEmbed API for open-source projects and embeds publishers
 
-[Iframely](https://iframely.com) makes an open embeds API available for the use in your open-source project. Or, if you publish embeds, this open API can present your embeds to be discovered by developers via [oEmbed](http://oembed.com) protocol. 
+[Iframely](https://iframely.com) makes open embeds API available for the use in your open-source project. Or, if you publish embeds, this open API can present your embeds to be discovered by developers via [oEmbed](http://oembed.com) protocol. 
 
 ## For your open-source project
 
@@ -10,17 +10,17 @@ oEmbed protocols make it possible for users of your open-source package to switc
 
 To help you out, we make the two endpoints open, free and public (no API keys):
 
-oEmbed API: 
+* oEmbed API: 
 [>> http://open.iframe.ly/oembed?url=…. & origin=…](http://open.iframe.ly/api/oembed?url=http://vimeo.com/62092214&origin=)
 
-Iframely API:
+* Iframely API:
 [>> http://open.iframe.ly/iframely?url=…. & origin=…](http://open.iframe.ly/api/iframely?url=http://vimeo.com/62092214&origin=)
 
 Where `url` is URL-encoded and `origin` should contain a string with either your GitHub username or your Twitter @handle (which is perhaps the same for most of you).  
 
 More request parameters are available too. [See docs](https://iframely.com/docs).
 
-The embed codes will be responsive whenever possible, will cover all our 1600+ domains, will provide [Summary Cards](https://iframely.com/docs/widgets) for the other links. Plus CORS and JSONP so that you can call API with your JavaScript code. 
+The embed codes will be responsive whenever possible, will cover all our 1600+ domains, will provide [summary cards](https://iframely.com/docs/widgets) for  other links. Plus CORS and JSONP so that you can call API with your JavaScript code. 
 
 ## For your site
 
@@ -28,8 +28,10 @@ If you publish Twitter Cards or Open Graph, Iframely can also convert those into
 
 For it, you just add the following markup into `<head>` section of your page:
 
-		<link rel="alternate" href="http://open.iframe.ly/api/oembed?url=...&origin=..." type="application/json+oembed"/>
-		<link rel="alternate" href="http://open.iframe.ly/api/oembed?url=...&origin=...&format=xml" type="application/xml+oembed"/>
+		<link rel="alternate" href="http://open.iframe.ly/api/oembed?url=...&origin=..." 
+				type="application/json+oembed" />
+		<link rel="alternate" href="http://open.iframe.ly/api/oembed?url=...&origin=...&format=xml"
+				type="application/xml+oembed"/>
 
 Where `url` is URL-encoded and `origin` should contain a string with either your GitHub username or your Twitter @handle (which is perhaps the same for most of you).
 
@@ -38,7 +40,7 @@ Twitter players, photos and Open Graph videos work best. [Debug your URLs](http:
 
 ## Terms
 
-* The open API endpoints are powered by Iframely cloud and have the same uptime guarantee. 
+* The open API endpoints are powered by [Iframely](https://iframely.com) cloud and have the same uptime guarantee. 
 * However, these are free for open-source and non-commercial use only.
 * In your open-source project, make the endpoint address a config variable so that your users can re-configure it to point to any of oEmbed gateway of their choosing when they start using it.
 * Mention the fact that they need to configure oEmbed API endpoint in your README file or where appropriate. 
