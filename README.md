@@ -1,30 +1,22 @@
-# oEmbed API for open-source projects and embeds publishers
-
-[Iframely](https://iframely.com) makes open embeds API available for the use in your open-source project. Or, if you publish embeds, this open API can present your embeds to be discovered by developers via [oEmbed](http://oembed.com) protocol. 
-
 ## For your open-source project
 
-So you need embeds for your open-source project. [oEmbed](http://oembed.com) is a great fit. There are many solutions available, including open-source solutions or commercial APIs. Say, [Iframely parsers](https://github.com/itteco/iframely) and [Iframely cloud](https://iframely.com) to mention a few. 
+[oEmbed](http://oembed.com) is a great fit if you need embeds. It is an open standard and many solutions exist. Open-source or commercial ones. Say, [Iframely open-source](https://github.com/itteco/iframely) and [Iframely hosted](https://iframely.com), to mention a few :)
 
-oEmbed protocol makes it possible for users of your open-source package to switch between implementations with ease, just by changing API endpoint address. So you don’t lock them down if you go with oEmbed. However, you do need a default proxy endpoint to put it in your box. 
+Since many oEmbed options are available, it will be possible for users of your open-source package to switch between proxy implementations with ease, just by changing API endpoint address. Basically, you don’t limit them if you go with oEmbed. They can even develop their own proxy API and still be connected. 
 
-To help you out, we make these two endpoints open, free and public (no API keys):
+However, you do need a default proxy endpoint to put it in your settings. Here’s what we’ve got to help you out:
 
-* oEmbed API: 
-[>> http://open.iframe.ly/oembed?url=…. & origin=…](http://open.iframe.ly/api/oembed?url=http://vimeo.com/62092214&origin=)
-
-* Iframely API:
-[>> http://open.iframe.ly/iframely?url=…. & origin=…](http://open.iframe.ly/api/iframely?url=http://vimeo.com/62092214&origin=)
+[>> http://open.iframe.ly/api/oembed?url=…. & origin=…](http://open.iframe.ly/api/oembed?url=http://vimeo.com/62092214&origin=)
 
 Where `url` is URL-encoded and `origin` should contain a string with either your GitHub username or your Twitter @handle (which is perhaps the same for most of you).  
 
-More request parameters are available too. [See docs](https://iframely.com/docs).
+More request parameters are available too. [See docs](https://iframely.com/docs) (except `&iframe=1` parameter, which activates hosted iFrames).
 
-The embed codes will be responsive whenever possible, will cover all our 1600+ domains, will provide [summary cards](https://iframely.com/docs/widgets) for  other links. Plus CORS and JSONP so that you can call API with your JavaScript code. 
+The embed codes will be responsive whenever possible, will cover all our 1600+ domains, and will provide [summary cards](https://iframely.com/docs/widgets) for  articles and general links that do not have native embeds. Plus CORS and JSONP so that you can call API with your JavaScript code. 
 
 ## For your site
 
-If you publish Twitter Cards or Open Graph, Iframely can also convert those into [oEmbed](http://oembed.com) so that you also publish your embeds to developers who auto-discover  oEmbed.
+If you publish Twitter Cards or Open Graph, Iframely can convert those into [oEmbed](http://oembed.com) so that you can easily publish your embeds to developers who auto-discover  in oEmbed format.
 
 For it, you just add the following markup into `<head>` section of your page:
 
@@ -42,16 +34,19 @@ Contact us if you need a custom parser for your embeds.
 
 ## Terms
 
-* The open API endpoints are powered by [Iframely](https://iframely.com) cloud and have the same uptime guarantee. 
-* However, these are free for open-source and non-commercial use only.
-* In your open-source project, make the endpoint address a config variable so that your users can re-configure it to point to any of oEmbed gateway of their choosing when they start using it.
+* This open API endpoint is powered by [Iframely](https://iframely.com) cloud and have the same uptime guarantee. 
+* In your open-source project, make the endpoint address a config variable so that your users can re-configure it to point to any of oEmbed gateways of their choosing when they start using it.
 * Mention the fact that they need to configure oEmbed API endpoint in your README file or where appropriate. 
 * Be nice. We reserve the right to rate-limit or block IP addresses. No rate-limit is there by default (we presume innocence). So, 
 * Make sure we can contact you in case of an issue. Based on your `origin` value, if your GitHub profile doesn’t list an email address, please, consider following [Iframely on Twitter](https://twitter.com/iframely) so we can send a direct message. 
+* If you use API commercially, following us on Twitter is required so we can deliver important updates and reach out in case of a problem.
+* Other standard Iframely [terms](https://iframely.com/terms) apply.
 
-* Last, but not least - fork [this document on GitHub](https://github.com/itteco/oembed-api) and pull-request with the link to your open-source project.
 
 ## Implementations:
+
+Fork [this document on GitHub](https://github.com/itteco/oembed-api) and pull-request with the link to your open-source project to list it here.
+
 
 * [CKEditor](https://github.com/ckeditor/ckeditor-dev) text editor 
 * [Medium Insert](https://github.com/orthes/medium-editor-insert-plugin) plugin for [MediumEditor](https://github.com/daviferreira/medium-editor)
