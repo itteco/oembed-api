@@ -39,7 +39,6 @@ Contact us if you need a custom parser for your embeds.
 * Mention the fact that they need to configure oEmbed API endpoint in your README file or where appropriate. 
 * Be nice. We reserve the right to rate-limit or block IP addresses. No rate-limit is there by default (we presume innocence). So, 
 * Make sure we can contact you in case of an issue. Based on your `origin` value, if your GitHub profile doesn’t list an email address, please, consider following [Iframely on Twitter](https://twitter.com/iframely) so we can send a direct message. 
-* If you use API commercially, following us on Twitter is required so we can deliver important updates and reach out in case of a problem.
 * Other standard Iframely [terms](https://iframely.com/terms) apply.
 
 
